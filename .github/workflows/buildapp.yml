@@ -1,0 +1,42 @@
+name: build-app
+
+on:
+  
+  workflow_dispatch:
+  push:
+    paths:
+      - train.py
+      - predict.py
+
+jobs:
+  
+  train-model-and-build-container-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: |
+          conda env create --file conda-tf2py.yml
+          ln -s $CONDA/envs/tf2py/bin/python /usr/local/bin/path_to_python
+      
+      - name: Train and Predict
+        run: |
+          ./train.py -e 1 -b 128
+          ./predict.py
+      
+      - name: Build Docker Image
+        run: |
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.IMAGENAME }}:latest .  
+      
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Push Docker Image
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ vars.IMAGENAME }}:latest
+
