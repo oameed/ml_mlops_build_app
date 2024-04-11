@@ -23,7 +23,7 @@ jobs:
       
       - name: Train and Predict
         run: |
-          ./train.py -e 1 -b 128
+          ./train.py -e 3 -b 128
           ./predict.py
       
       - name: Build Docker Image
