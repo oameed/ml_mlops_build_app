@@ -35,13 +35,12 @@
      b. `docker login`  
      c. `docker push username/image-name:image-tag`
  
-* [**_Google Cloud Platform_**](https://cloud.google.com/docs)  
-
-  1. [**_Google Cloud Setup Checklist_**](https://cloud.google.com/docs/enterprise/setup-checklist)  
-
-  2. **_Install the_** [**_Google Cloud CLI_**](https://cloud.google.com/sdk/docs/cheatsheet)  
-     [follow the official instructions](https://cloud.google.com/sdk/docs/install-sdk) 
-     
-
+## Exploring [Google Cloud Platform](https://cloud.google.com/docs)
+   
+   * [**_Google Cloud Setup Checklist_**](https://cloud.google.com/docs/enterprise/setup-checklist)  
+   * **_Google Cloud CLI_** [[Installation]](https://cloud.google.com/sdk/docs/install-sdk) [[Cheet Sheets]](https://cloud.google.com/sdk/docs/cheatsheet)  
+   * [**_MLOps on GCP_**](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)  
+   * [**_Kubeflow on GCP_**](https://googlecloudplatform.github.io/kubeflow-gke-docs/dev/docs/)  
+   * [**_Vertex AI_**](https://cloud.google.com/vertex-ai/docs)  
 
 
