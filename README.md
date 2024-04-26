@@ -43,4 +43,11 @@
    * [**_Kubeflow on GCP_**](https://googlecloudplatform.github.io/kubeflow-gke-docs/dev/docs/)  
    * [**_Vertex AI_**](https://cloud.google.com/vertex-ai/docs)  
 
+## A Tutorial on [TensorFlow Extended (TFX)](https://www.tensorflow.org/tfx)
+
+   * [**_Simple TFX Pipeline Tutorial using Penguin Dataset_**](https://gitlab.com/oameed/ml_production_tfx)  
+
+
+
+
 
