@@ -4,7 +4,7 @@
 
 ## Cheat Sheets 
 
-* [**_Linux Computing Cheat Sheets_**](https://archive.org/details/computing-cheat-sheets)  
+* [**_Linux Computing Cheat Sheets_**](https://archive.org/details/computing-basics)  
 
 * [**_GitHub Actions_**](https://docs.github.com/en/actions)  
 
